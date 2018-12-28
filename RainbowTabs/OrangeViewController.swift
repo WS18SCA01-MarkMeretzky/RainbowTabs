@@ -18,11 +18,23 @@ class OrangeViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        print("\(type(of: self)) will appear");
+        super.viewWillAppear(animated);
+        print("\(type(of: self)) viewWillAppear");
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated);
+        print("\(type(of: self)) viewDidAppear");
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-       print("\(type(of: self)) will disappear");
+        super.viewWillDisappear(animated);
+        print("\(type(of: self)) viewWillDisappear");
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated);
+        print("\(type(of: self)) viewDidDisappear");
     }
 
     /*
